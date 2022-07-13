@@ -295,10 +295,25 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/friends" class="drawer-menu-item-link">
-                  
-                  <span class="name">友情链接</span>
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(5)">
+                  <span>
+                    
+                      <i class="fas fa-link"></i>
+                    
+                    <span class="name">更多</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(5)}" aria-hidden="true"></i>
                 </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(5)">
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -431,10 +446,23 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/friends" class="menu-item-link" title="友情链接">
+                <a href="javascript:;" class="menu-item-link" title="更多">
                   
-                  <span class="name">友情链接</span>
+                    <i class="fas fa-link"></i>
+                  
+                  <span class="name">更多</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
                 </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -626,22 +654,22 @@
             
             <div class="year" data-aos="zoom-in-up">
                 <div class="bullet"></div>
-                <a href="/archives/2022">2022</a>
+                <a href="/archives/2019">2019</a>
             </div>
           
           <li class="post-item" data-aos="fade-left">
             
             <div class="post-img-box">
-              <a href="/2022/07/12/hello-world/" class="post-img " style="background-size: cover; 
+              <a href="/2019/01/20/hhh/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/7.jpg" class="lazyload placeholder" data-srcset="/medias/7.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" src="/gallery/tj1/3KA%E5%A3%81%E7%BA%B89.jpg" class="lazyload placeholder" data-srcset="/gallery/tj1/3KA%E5%A3%81%E7%BA%B89.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
-                <span class="post-date">07-12</span>
+                <span class="post-date">01-20</span>
               </div>
-              <a class="post-title" href="/2022/07/12/hello-world/">Hello World</a>
+              <a class="post-title" href="/2019/01/20/hhh/">Hello world</a>
             </div>
           </li>
         

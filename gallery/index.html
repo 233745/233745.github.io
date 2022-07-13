@@ -295,10 +295,25 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/friends" class="drawer-menu-item-link">
-                  
-                  <span class="name">友情链接</span>
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(5)">
+                  <span>
+                    
+                      <i class="fas fa-link"></i>
+                    
+                    <span class="name">更多</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(5)}" aria-hidden="true"></i>
                 </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(5)">
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -431,10 +446,23 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/friends" class="menu-item-link" title="友情链接">
+                <a href="javascript:;" class="menu-item-link" title="更多">
                   
-                  <span class="name">友情链接</span>
+                    <i class="fas fa-link"></i>
+                  
+                  <span class="name">更多</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
                 </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -566,7 +594,7 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://pic2.zhimg.com/80/v2-2cf3b62a87045ee279096449cf6f3ac1_1440w.jpg?source=1940ef5c')">
+  background-position: center center;position: relative;background-image:url('//medias/tk.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
@@ -605,26 +633,6 @@
   </figcaption>
   </figure>
   
-    
-  <figure class="gallery-group">
-  <img class="gallery-group-img" src='https://pic1.zhimg.com/80/v2-8d542d68cbbf0e5f503da9e3f72b8447_1440w.jpg?source=1940ef5c' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name">古典图片</div>
-  <p>中国古典图片</p>
-  <a href='/gudian'></a>
-  </figcaption>
-  </figure>
-  
-    
-  <figure class="gallery-group">
-  <img class="gallery-group-img" src='https://pic1.zhimg.com/80/v2-56164ef0695767475935c9e019c594ae_1440w.jpg?source=1940ef5c' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name">风景</div>
-  <p>风景图片</p>
-  <a href='/fengjing'></a>
-  </figcaption>
-  </figure>
-  
 </div>
       </div>
       <div class="post-tags-categories">
@@ -634,7 +642,7 @@
         <div class="copyright">
   <ul class="post-copyright">
     <li class="post-copyright-author">
-    <strong>作者:  </strong>John Doe</a>
+    <strong>作者:  </strong>奈亚子</a>
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
