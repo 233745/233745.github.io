@@ -693,6 +693,12 @@
 			</div>
 			
 			<div class="bar-box">
+				<span class="bar-name">别天神</span>
+				<div class="bar" style="background: linear-gradient(45deg, #b49fda 0%, #7ac5d8 99%, #fad0c4 100%); width: 76%"></div>
+				<span class="bar-number">76%</span>
+			</div>
+			
+			<div class="bar-box">
 				<span class="bar-name">天照</span>
 				<div class="bar" style="background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); width: 85%"></div>
 				<span class="bar-number">85%</span>
@@ -1415,29 +1421,6 @@
 
 <!-- 评论所需js -->
 
-  
-    <script type="text/javascript">
-  comment_el = '#lv-container';
-  load_livere = function () {
-    if ($(comment_el).length) {
-      (function (d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-
-        if (typeof LivereTower === 'function') { return; }
-
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    }
-  }
-  $(document).ready(load_livere);
-  document.addEventListener('pjax:complete', function () {
-    load_livere();
-  });
-</script>
   
 
 
